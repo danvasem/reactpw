@@ -16,6 +16,8 @@ PWA que utiliza la API de MealDB para mostrar recetas con sus instrucciones. Alg
 - `npm run dev` para entorno de desarrollo
 - `npm run build && npm start` para producción
 
+[Ver la app](https://misrecetas.turok3000.now.sh/)
+
 ## Licencia
 
 MIT

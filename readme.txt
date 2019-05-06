@@ -40,10 +40,17 @@
     Crear el archivo src/service-worker.js
     Cambiar los scripts de package.json
 
-* En workbox el orden de como se escriben las reglas de routing importan, la primera que machea es la que se aplica y deja sin efecto las demás, por lo tanto la regla por defecto se debe poner al final
+* En workbox el orden de como se escriben las reglas de routing importan, la primera que machea es la que se aplica y deja sin efecto las demás, por lo tanto la regla por defecto se debe poner al final.
 
 * Para certificado https podemos utilizar el sitio https://letsencrypt.org/
 
 * Para usar Google Analytics en React:
     npm install react-ga
     Tener en cuenta que los Ad Blocker del navegador pueden interferir con Google Analytics
+
+* Para publicar la aplicaicón en NOW
+    npm install -g now (Si es que no está instalado)
+    Configurar un archivo "now.json", seguir el ejemplo de https://zeit.co/examples/create-react-app
+    En Package.json agregar el comando "now-build" según el vínculo anterior.
+    Ejecutar "C:\Users\user\AppData\Roaming\npm\node_modules\now\download\dist\now.exe" y obtener la dirección que resulta.
+    *** Si no se puede desinstalar el paquete global now, entonces se debe ir a la ruta donde se instalan los paquetes globales y borrar "now.cmd" y "now" y posteriormente ejecutar nuevamente la desinstalación.
